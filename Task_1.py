@@ -66,7 +66,7 @@ def gen_df_from_ftp_dir_listing(ftp):
     lines = []
     flist = []
     try:    
-        res = ftp.retrlines("NLST"+ftpdir, lines.append)
+        res = ftp.retrlines("LIST"+ftpdir, lines.append)
     except:
         return
     for line in lines:
@@ -78,7 +78,6 @@ def gen_df_from_ftp_dir_listing(ftp):
             station_id = -1 
         flist.append([station_id, fname, fext])
     df_ftpdir = pd.DataFrame(flist,columns=["station_id", "name", "ext",])
-    return(df_ftpdir)
 
 def grabFile(ftpfullname,localfullname):
     try:
