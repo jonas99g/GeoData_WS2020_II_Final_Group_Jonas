@@ -4,10 +4,9 @@ global ftp_user = "anonymous"
 global ftp_passwd = ""
 global ftp_dir =  "/climate_environment/CDC/observations_germany/climate"+topic_dir
 global station_desc_pattern = "_Beschreibung_Stationen.txt"
-
-state = "Bayern"
-opt1 ="Average Temperature":"ja_tt"
-"Altitude":"altitude"
+global state = "Bayern"
+global opt1 = "ja_tt"
+global opt2 = "altitude"
 
 iyear = 2017, 2018, 2019
 date_from = datetime.strptime((year_selected + '-01-01'), "%Y-%m-%d")
@@ -19,12 +18,11 @@ date_to = datetime.strptime((year_selected + '-12-31'), "%Y-%m-%d")
     print("Loading...\n")
     create_dir()
     connect_ftp()
-    global basename
     global df_ftpdir = gen_df_from_ftp_dir_listing(ftp, ftp_dir)
     global df_zips = df_ftpdir[df_ftpdir["ext"]==".zip"]
     df_zips.set_index("station_id", inplace = True)
     station_grab()
-    basename = os.path.splitext(station_fname)[0]
+    global basename = os.path.splitext(station_fname)[0]
     global df_stations = station_desc_txt_to_csv(local_ftp_station_dir + station_fname, local_station_dir + basename + ".csv")
     global station_ids_selected = df_stations[df_stations['state'].str.contains(state)].index
     download_stations()
@@ -34,10 +32,6 @@ date_to = datetime.strptime((year_selected + '-12-31'), "%Y-%m-%d")
     global df_appended_ts = ts_append()
     df_appended_ts.to_csv(local_ts_appended_dir + "ts_appended.csv",sep=";")
     
-    max_alt()
-    min_alt()
-    max_temp()
-    min_temp()
     plot()
 
 def connect_ftp(): #establishing connection to ftp server and check if it was successfull
@@ -213,31 +207,3 @@ def plot():
     plt.show()
     fig1.savefig(fpo1+"_"+fpo2+"_"+year_selected+"_DWD_Stations_"+state+".png")
     print("A low R^2 value indicates, that the regression model is not fitting well (no strong correlation of data points).\n")
-
-def max_alt():
-    max_alt_station_id = df_appended_ts.loc[df_appended_ts.altitude == df_appended_ts.altitude.max(), 'stations_id'].values[0]
-    max_alt = df_appended_ts.loc[df_appended_ts.stations_id == max_alt_station_id, "altitude"].values[0]
-    max_alt_station_name = df_appended_ts.loc[df_appended_ts.stations_id == max_alt_station_id, "name"].values[0]
-    max_alt_temp = df_appended_ts.loc[df_appended_ts.stations_id == max_alt_station_id, "ja_tt"].values[0]
-    print("Highest DWD station in "+state+" is the station "+(str(max_alt_station_id))+" "+(str(max_alt_station_name))+" with a altitude of "+(str(max_alt))+" meters and has a annual mean temperature of "+(str(max_alt_temp))+" degrees celsius for the year "+(str(year_selected))+".")
-
-def min_alt():
-    min_alt_station_id = df_appended_ts.loc[df_appended_ts.altitude == df_appended_ts.altitude.min(), 'stations_id'].values[0]
-    min_alt = df_appended_ts.loc[df_appended_ts.stations_id == min_alt_station_id, "altitude"].values[0]
-    min_alt_station_name = df_appended_ts.loc[df_appended_ts.stations_id == min_alt_station_id, "name"].values[0]
-    min_alt_temp = df_appended_ts.loc[df_appended_ts.stations_id == min_alt_station_id, "ja_tt"].values[0]
-    print("Lowest DWD station in "+state+" is the station "+(str(min_alt_station_id))+" "+(str(min_alt_station_name))+" with a altitude of "+(str(min_alt))+" meters and has a annual mean temperature of "+(str(min_alt_temp))+" degrees celsius for the year "+(str(year_selected))+".")
-
-def max_temp():
-    max_temp_station_id = df_appended_ts.loc[df_appended_ts.ja_tt == df_appended_ts.ja_tt.max(), 'stations_id'].values[0]
-    max_temp = df_appended_ts.loc[df_appended_ts.stations_id == max_temp_station_id, "ja_tt"].values[0]
-    max_temp_station_name = df_appended_ts.loc[df_appended_ts.stations_id == max_temp_station_id, "name"].values[0]
-    max_temp_alt = df_appended_ts.loc[df_appended_ts.stations_id == max_temp_station_id, "altitude"].values[0]
-    print("Hottest DWD station in "+state+" is the station "+(str(max_temp_station_id))+" "+(str(max_temp_station_name))+" with a annual mean temperature of "+(str(max_temp))+" degrees celsius for the year "+(str(year_selected))+" and is at "+(str(max_temp_alt))+" meters.")
-
-def min_temp():
-    min_temp_station_id = df_appended_ts.loc[df_appended_ts.ja_tt == df_appended_ts.ja_tt.min(), 'stations_id'].values[0]
-    min_temp = df_appended_ts.loc[df_appended_ts.stations_id == min_temp_station_id, "ja_tt"].values[0]
-    min_temp_station_name = df_appended_ts.loc[df_appended_ts.stations_id == min_temp_station_id, "name"].values[0]
-    min_temp_alt = df_appended_ts.loc[df_appended_ts.stations_id == min_temp_station_id, "altitude"].values[0]
-    print("Coolest DWD station in "+state+" is the station "+(str(min_temp_station_id))+" "+(str(min_temp_station_name))+" with a annual mean temperature of "+(str(min_temp))+" degrees celsius for the year "+(str(year_selected))+" and is at "+(str(min_temp_alt))+" meters.\n")
