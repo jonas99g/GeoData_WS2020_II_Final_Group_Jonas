@@ -1,0 +1,22 @@
+Stations_ID;Von_Datum;Bis_Datum;Stationsname;Parameter;Parameterbeschreibung;Einheit;Datenquelle (Strukturversion=SV);Zusatz-Info;Besonderheiten;Literaturhinweis;eor;
+1;19370101;19851231;Aach;JA_FK;Jahresmittel der Windstaerke;Bft;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));arithm.Mittel aus Monatsmittelwerten;;;eor;
+1;19310101;19361231;Aach;JA_MX_FX;Absolutes Maximum der Windmaxspitze;m/s;Monatswerte (Messnetz=4) ohne Tageswerte.;Extrema des Jahres;;;eor;
+1;19370101;19851231;Aach;JA_MX_FX;Absolutes Maximum der Windmaxspitze;m/s;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));Extrema des Jahres;;;eor;
+1;18910101;19111231;Aach;JA_MX_RS;Maximale Niederschlagshoehe des Jahres;mm;Monatswerte (Messnetz=6) ohne Tageswerte;Extrema des Jahres;;;eor;
+1;19120101;19301231;Aach;JA_MX_RS;Maximale Niederschlagshoehe des Jahres;mm;KLIDADIGI: Niederschlagsdaten nacherfasst (1 Termin: ca 07 MOZ und Tagessummen);Extrema des Jahres;;;eor;
+1;19310101;19851231;Aach;JA_MX_RS;Maximale Niederschlagshoehe des Jahres;mm;Niederschlagsdaten aus Niederschlagsroutine des DWD oder Vorgängerdienste bis Einrichtung Nst(A) oder Nst(k) (1 Termin ca 7 MOZ und Tagessummen);Extrema des Jahres;;;eor;
+1;19310101;19361231;Aach;JA_MX_TN;Absolutes Minimum der Lufttemperatur in 2m Hoehe (Jahr);°C;Monatswerte (Messnetz=4) ohne Tageswerte.;Extrema des Jahres;;;eor;
+1;19370101;19851231;Aach;JA_MX_TN;Absolutes Minimum der Lufttemperatur in 2m Hoehe (Jahr);°C;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));Extrema des Jahres;;;eor;
+1;19310101;19361231;Aach;JA_MX_TX;Absolutes Maximum  der Lufttemperatur in 2m Hoehe (Jahr);°C;Monatswerte (Messnetz=4) ohne Tageswerte.;Extrema des Jahres;;;eor;
+1;19370101;19851231;Aach;JA_MX_TX;Absolutes Maximum  der Lufttemperatur in 2m Hoehe (Jahr);°C;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));Extrema des Jahres;;;eor;
+1;19370101;19851231;Aach;JA_N;Jahresmittel des Bedeckungsgrades;Achtel;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));arithm.Mittel aus Monatsmittelwerten;;;eor;
+1;18910101;19111231;Aach;JA_RR;Jahressumme der Niederschlagshoehe;mm;Monatswerte (Messnetz=6) ohne Tageswerte;Summe aus Monatssummen;;;eor;
+1;19120101;19301231;Aach;JA_RR;Jahressumme der Niederschlagshoehe;mm;KLIDADIGI: Niederschlagsdaten nacherfasst (1 Termin: ca 07 MOZ und Tagessummen);Summe aus Monatssummen;;;eor;
+1;19310101;19851231;Aach;JA_RR;Jahressumme der Niederschlagshoehe;mm;Niederschlagsdaten aus Niederschlagsroutine des DWD oder Vorgängerdienste bis Einrichtung Nst(A) oder Nst(k) (1 Termin ca 7 MOZ und Tagessummen);Summe aus Monatssummen;;;eor;
+1;19310101;19361231;Aach;JA_TN;Jahresmittel des Lufttemperatur Minimums;°C;Monatswerte (Messnetz=4) ohne Tageswerte.;arithm.Mittel aus Monats-Extremen;;;eor;
+1;19370101;19851231;Aach;JA_TN;Jahresmittel des Lufttemperatur Minimums;°C;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));arithm.Mittel aus Monats-Extremen;;;eor;
+1;19310101;19361231;Aach;JA_TT;Jahresmittel der Lufttemperatur;°C;Monatswerte (Messnetz=4) ohne Tageswerte.;arithm.Mittel aus Monatsmittelwerten;;;eor;
+1;19370101;19851231;Aach;JA_TT;Jahresmittel der Lufttemperatur;°C;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));arithm.Mittel aus Monatsmittelwerten;;;eor;
+1;19370101;19851231;Aach;JA_TX;Jahresmittel der Lufttemperatur Maximum;°C;Klimadaten aus Klimaroutine des DWD (3 Termine: um  07, 14, 21 MOZ, ab 01.01.1987 07:30,14:30,21:30 MEZ) und Tageswerte jeweils nach Beobachteranleitung für Klimastationen (BAK));arithm.Mittel aus Monats-Extremen;;;eor;
+Legende: FT  = Folgetag; GZ = Gesetzliche Zeit
+generiert: 31.08.2020 --  Deutscher Wetterdienst  --

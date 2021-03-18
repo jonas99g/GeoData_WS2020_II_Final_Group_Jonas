@@ -1,0 +1,2 @@
+Stations_ID;Stationsname;Von_Datum;Bis_Datum
+     1;Aach                                    ;18910101;19860630
