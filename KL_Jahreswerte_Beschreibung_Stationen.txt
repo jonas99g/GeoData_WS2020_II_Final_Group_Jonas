@@ -668,7 +668,7 @@ Stations_id von_datum bis_datum Stationshoehe geoBreite geoLaenge Stationsname B
 03575 19250101 19821231            163     49.3570    8.1405 Neustadt/Weinstraﬂe                      Rheinland-Pfalz                                                                                   
 03576 19760101 20011231            125     49.3478    8.1822 Neustadt/Weinstraﬂe (Heidehof)           Rheinland-Pfalz                                                                                   
 03577 18810101 19760630             64     53.3585   13.0502 Neustrelitz                              Mecklenburg-Vorpommern                                                                            
-03578 19820101 20061231            341     48.9832   12.1443 Regensburg-Burgweinting                  Bayern                                                                                            
+03578 19820101 20061231            341     48.9831   12.1444 Regensburg-Burgweinting                  Bayern                                                                                            
 03590 19590101 20041231            180     50.2335    8.8923 Nidderau-Windecken                       Hessen                                                                                            
 03591 19940101 20201231            350     50.6743    6.4240 Nideggen-Schmidt                         Nordrhein-Westfalen                                                                               
 03595 19670101 20021231            250     50.4107    7.8080 Niederelbert                             Rheinland-Pfalz                                                                                   
