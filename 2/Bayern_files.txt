@@ -1,0 +1,22 @@
+https://geoportal.bayern.de/bayernatlas
+
+https://www.ldbv.bayern.de/produkte/weitere/opendata.html
+
+Verwaltungsgebiete
+
+Verwaltungsgebiete
+Maßstab 1:25000
+
+alle Gemeinden, Verwaltungsgemeinschaften, Landkreise und kreisfreie Städte, Regierungsbezirke und der Freistaat Bayern.
+
+UTM32: Bayern (zip, 3,16 MB)
+https://www.geodaten.bayern.de/opendata/Bayern.zip
+
+URL des WMS Verwaltungsgebiete:
+https://geoservices.bayern.de/wms/v1/ogc_verwaltungsatlas_verwaltungsgrenzen.cgi?
+
+
+Download DGM50: (Stand: 2020)
+UTM32-Koordinatensystem
+DGM50 im ascii-txt-Format (zip, 130 MB)
+DGM50 im ESRI Grid-Format (ascii) (zip, 70,2 MB)
