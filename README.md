@@ -14,7 +14,6 @@ Found in: Part_1_query_download_plot.ipynb
 
 Exports:
 * df_station_desc_query.csv
-* df_ftp_dir_query.csv
 * png image of ploted data
 
 Task 2:
