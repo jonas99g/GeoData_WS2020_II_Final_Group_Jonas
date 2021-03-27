@@ -1,22 +1,9 @@
-https://geoportal.bayern.de/bayernatlas
-
-https://www.ldbv.bayern.de/produkte/weitere/opendata.html
-
-Verwaltungsgebiete
+DTM of Bavaria with 50m horizontal resolution in EPSG:25852 as GeoTiff (500 MB!): http://www.geodaten.bayern.de/opendata/DGM50_UTM32/dgm50_epsg25832.tif
 
 Verwaltungsgebiete
 Maßstab 1:25000
+UTM32: Regierungsbezirke Bayern, EPSG:25832
+http://www.geodaten.bayern.de/opendata/Verwaltungsgebiete_shp_epsg25832.zip
+Metadaten: https://geoportal.bayern.de/geoportalbayern/anwendungen/details?0&resId=bf9ff4ed-62c7-4935-9318-d5251108acc3
 
-alle Gemeinden, Verwaltungsgemeinschaften, Landkreise und kreisfreie Städte, Regierungsbezirke und der Freistaat Bayern.
-
-UTM32: Bayern (zip, 3,16 MB)
-https://www.geodaten.bayern.de/opendata/Bayern.zip
-
-URL des WMS Verwaltungsgebiete:
-https://geoservices.bayern.de/wms/v1/ogc_verwaltungsatlas_verwaltungsgrenzen.cgi?
-
-
-Download DGM50: (Stand: 2020)
-UTM32-Koordinatensystem
-DGM50 im ascii-txt-Format (zip, 130 MB)
-DGM50 im ESRI Grid-Format (ascii) (zip, 70,2 MB)
+regbez_ex.shp
