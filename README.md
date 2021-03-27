@@ -20,9 +20,9 @@
 
 * Task 2:
     * Files:
-        * DTM of Bavaria with 50m horizontal resolution in EPSG:25852 as GeoTiff (500 MB!): http://www.geodaten.bayern.de/opendata/DGM50_UTM32/dgm50_epsg25832.tif
+        * DTM of Bavaria with 50m horizontal resolution in EPSG:25852 as GeoTiff: http://www.geodaten.bayern.de/opendata/DGM50_UTM32/dgm50_epsg25832.tif
 
         * Verwaltungsgebiete, Maßstab 1:25000, EPSG:25832
-        http://www.geodaten.bayern.de/opendata/Verwaltungsgebiete_shp_epsg25832.zip
-        Metadaten: https://geoportal.bayern.de/geoportalbayern/anwendungen/details?0&resId=bf9ff4ed-62c7-4935-9318-d5251108acc3
+        http://www.geodaten.bayern.de/opendata/Verwaltungsgebiete_shp_epsg25832.zip \\
+        Metadaten: https://geoportal.bayern.de/geoportalbayern/anwendungen/details?0&resId=bf9ff4ed-62c7-4935-9318-d5251108acc3 \\
         Regierungsbezirke Bayern: regbez_ex.shp
