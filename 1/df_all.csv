@@ -1,4 +1,4 @@
-station_id,altitude,latitude,longitude,name,yat_2017,yat_2018,yat_2019
+station_id,altitude,latitude,longitude,name,amt_2017,amt_2018,amt_2019
 73,340,48.6159,13.0506,Aldersbach-Kriestorf,9.38,10.73,10.16
 142,511,48.406,11.3117,Altomünster-Maisbrunn,9.19,10.16,9.81
 151,382,49.4691,11.8546,Amberg-Unterammersricht,9.3,10.39,10.09
